@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="app.scss">
+  <title>Document</title>
+</head>
+<body>
+  <div aria-label="Accordion" data-js="Accordion">
+    <h3>
+      <button
+        data-js="Accordion.Trigger"
+        aria-expanded="false"
+        class="accordion-trigger"
+        aria-controls="section-1"
+        id="accordion-panel-1">
+        Toggle Panel
+      </button>
+    </h3>
+    <section
+      data-js="Accordion.Panel"
+      id="section-1"
+      aria-labelledby="accordion-panel-1"
+      class="accordion-panel"
+      hidden
+    >
+      Panel Content
+    </section>
+    <h3>
+        <button
+          data-js="Accordion.Trigger"
+          aria-expanded="false"
+          class="accordion-trigger"
+          aria-controls="section-1"
+          id="accordion-panel-1">
+          Toggle Panel
+        </button>
+      </h3>
+      <section
+        data-js="Accordion.Panel"
+        id="section-1"
+        aria-labelledby="accordion-panel-1"
+        class="accordion-panel"
+        hidden
+      >
+        Panel Content
+      </section>
+      <h3>
+          <button
+            data-js="Accordion.Trigger"
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="section-1"
+            id="accordion-panel-1">
+            Toggle Panel
+          </button>
+        </h3>
+        <section
+          data-js="Accordion.Panel"
+          id="section-1"
+          aria-labelledby="accordion-panel-1"
+          class="accordion-panel"
+          hidden
+        >
+          Panel Content
+        </section>
+  </div>
+
+  <script src="accordion.js"></script>
+</body>
+</html>
